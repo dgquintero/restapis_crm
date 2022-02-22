@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/dgquintero/restapis_crm#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
