@@ -51,4 +51,13 @@ exports.actualizarCliente = async(req, res, next) => {
   }
 }
 
-
+// Eliminar cliente por su ID
+exports.eliminarCliente = async(req, res, next) => {
+  try {
+    const cliente = await Clientes.findOneAndDelete({ _id: req.params.idCliente })
+    res.json({mensaje: 'El cliente ha sido Eliminado'})
+  } catch (error) {
+    console.log(error)
+    next()
+  }
+}
