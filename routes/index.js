@@ -8,5 +8,9 @@ module.exports = function(){
   router.post('/clientes', clienteController.nuevoCliente)
   // Obtener todos los clientes
   router.get('/clientes', clienteController.obtenerClientes)
+  // muestra un cliente en especifico
+  router.get('/clientes/:idCliente', clienteController.mostrarCliente)
+  // Actualizar Cliente
+  router.put('/clientes/:idCliente', clienteController.actualizarCliente)
   return router
 }

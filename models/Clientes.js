@@ -10,7 +10,7 @@ const clientesSchema = new Schema({
     type:String,
     trim: true
   },
-  Empresa: {
+  empresa: {
     type:String,
     trim: true
   },
