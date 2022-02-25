@@ -22,6 +22,7 @@ module.exports = function(){
   router.post('/productos', productoController.subirArchivo ,productoController.nuevoProducto)
   router.get('/productos', productoController.mostrarProductos)
   router.get('/productos/:idProducto', productoController.mostrarProducto)
+  router.put('/productos/:idProducto', productoController.subirArchivo, productoController.actualizarProducto)
 
   return router
 }
