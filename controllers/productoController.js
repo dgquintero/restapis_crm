@@ -12,3 +12,5 @@ exports.nuevoProducto = async (req, res, next) => {
     next()
   }
 }
+
+
