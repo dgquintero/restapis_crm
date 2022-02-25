@@ -19,7 +19,9 @@ module.exports = function(){
 
   // PRODUCTOS
   // nuevos productos
-  router.post('/productos', productoController.nuevoProducto)
+  router.post('/productos', productoController.subirArchivo ,productoController.nuevoProducto)
+  router.get('/productos', productoController.mostrarProductos)
+  router.get('/productos/:idProducto', productoController.mostrarProducto)
 
   return router
 }
