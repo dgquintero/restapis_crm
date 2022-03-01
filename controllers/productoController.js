@@ -105,3 +105,13 @@ exports.actualizarProducto = async(req, res, next) =>{
     next()
   }
 }
+
+exports.eliminarProducto = async(req, res, next) => {
+  try {
+    const producto = await Productos.findOneAndDelete(req.params.idProducto)
+    res.json({message: 'El producto fue eliminado con exito'})
+  } catch (error) {
+    console.log(error)
+    next()
+  }
+}
