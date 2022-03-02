@@ -28,5 +28,13 @@ module.exports = function(){
 
   // PEDIDOS
   router.post('/pedidos', pedidoController.nuevoPedido)
+  // mostrar pedidos
+  router.get('/pedidos', pedidoController.mostrarPedidos)
+  // mostrar pedido
+  router.get('/pedidos/:idPedido', pedidoController.mostrarPedido)
+  // Actualizar pedidos
+  router.put('/pedidos/:idPedido', pedidoController.actualizarPedido)
+  // Eliminar pedido
+  router.delete('/pedidos/:idProducto', pedidoController.eliminarPedido)
   return router
 }

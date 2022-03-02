@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const pedidosSchema = new Schema({
-  ciente: {
+  cliente: {
     type: Schema.ObjectId,
     ref: 'Clientes'
   },
